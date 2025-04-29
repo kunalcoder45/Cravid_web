@@ -91,7 +91,6 @@ export default function Home() {
         <Sonner />
         <MainContent />
         <Link href="/downloadapp">
-          <a>Go to Download Page</a>
         </Link>
       </TooltipProvider>
     </QueryClientProvider>

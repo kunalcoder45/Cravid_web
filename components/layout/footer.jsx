@@ -25,21 +25,23 @@ export function Footer() {
 
                 if (Icon) {
                   return (
-                    <Link
+                    <a
                       key={link.name}
                       href={link.href}
                       className="text-slate-400 hover:text-white transition-colors"
                       aria-label={link.name}
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <Icon className="h-5 w-5" />
-                    </Link>
+                    </a>
                   );
                 }
                 return null; // In case the icon is not found, return nothing
               })}
             </div>
           </div>
-          
+
           <div>
             <h3 className="font-medium text-white mb-4">Navigation</h3>
             <ul className="space-y-2">
@@ -55,7 +57,7 @@ export function Footer() {
               ))}
             </ul>
           </div>
-          
+
           <div>
             <h3 className="font-medium text-white mb-4">Legal</h3>
             <ul className="space-y-2">
@@ -85,7 +87,7 @@ export function Footer() {
               </li>
             </ul>
           </div>
-          
+
           <div>
             <h3 className="font-medium text-white mb-4">Newsletter</h3>
             <p className="text-sm text-slate-400 mb-4">
@@ -103,7 +105,7 @@ export function Footer() {
             </div>
           </div>
         </div>
-        
+
         <div className="border-t border-slate-800 mt-12 pt-6 text-center text-sm text-slate-500">
           <p>© {currentYear} {SITE_CONFIG.name}. All rights reserved.</p>
           <p className='mt-1'>Made By ❤️ <a href="https://kunalportfolio45.netlify.app/" target="_blank" rel="noopener noreferrer">Kunal Sharma</a></p>
